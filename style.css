@@ -143,6 +143,7 @@ img {
     
 }
 
+
 .unca {
     display: flex;
     justify-content: center; /* Centra las imágenes horizontalmente */
@@ -167,7 +168,6 @@ img {
         width: 150px; /* Ajusta el tamaño de las imágenes en pantallas pequeñas */
     }
 }
-
 
 .carrusel {
     max-width: 50%; /* Ajusta el ancho del carrusel */
