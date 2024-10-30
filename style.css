@@ -143,35 +143,7 @@ img {
     
 }
 
-.unca {
-    display: flex;
-    justify-content: center; /* Centra las imágenes horizontalmente */
-    align-items: center;
-    gap: 10px; /* Espacio entre las imágenes */
-    margin: 20px 0;
-    flex-wrap: wrap; /* Permite ajuste en filas múltiples si es necesario */
-}
 
-.unca img {
-    width: calc(100% / 3 - 10px); /* Ajusta a tres imágenes por fila */
-    max-width: 150px;
-    height: auto;
-    filter: drop-shadow(0 10px 10px #000);
-}
-
-/* Ajuste para pantallas pequeñas */
-@media (max-width: 768px) {
-    .unca img {
-        width: calc(100% / 2 - 10px); /* Dos imágenes por fila en pantallas pequeñas */
-    }
-}
-
-@media (max-width: 480px) {
-    .unca img {
-        width: 100%; /* Una imagen por fila en pantallas muy pequeñas */
-        max-width: 100%;
-    }
-}
 
 .carrusel {
     max-width: 50%; /* Ajusta el ancho del carrusel */
