@@ -143,6 +143,30 @@ img {
     
 }
 
+.unca {
+    display: flex;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center;
+    gap: 20px; /* Espacio entre las imágenes */
+}
+
+.unca img {
+    width: 250px; /* Ajusta el ancho de las imágenes */
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 10px 10px #000);
+}
+
+/* Hacer que las imágenes se adapten en pantallas pequeñas */
+@media (max-width: 768px) {
+    .unca {
+        flex-wrap: wrap; /* Permite que las imágenes se ajusten en múltiples filas */
+    }
+
+    .unca img {
+        width: 150px; /* Ajusta el tamaño de las imágenes en pantallas pequeñas */
+    }
+}
 
 
 .carrusel {
