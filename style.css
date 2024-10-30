@@ -147,26 +147,29 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px; /* Espacio entre imágenes */
-    margin: 10px 0;
 }
-
 .unca img {
-    width: calc(100% / 3 - 10px); /* Ajusta el ancho para que entren en una fila, puedes cambiar 3 por el número deseado */
+    width: 100%; /* Ocupa todo el ancho del contenedor en dispositivos pequeños */
     height: auto;
-    max-height: 150px;
+    margin: 10px;
     object-fit: contain;
     filter: drop-shadow(0 10px 10px #000);
 }
 
-/* Adaptación para pantallas pequeñas */
-@media (max-width: 768px) {
-    .unca img {
-        width: calc(100% / 2 - 10px); /* En móviles, reduce el número de imágenes por fila */
-        max-height: 120px;
-    }
+.unca img {
+    width: 20%;
+    height: auto;
+    margin: 10px;
+    max-height: 150px; /* Ajusta este valor según lo que necesites */
 }
 
+
+@media (max-width: 768px) {
+    .unca img {
+        width: 80%; /* Reduce el ancho en dispositivos pequeños */
+        max-height: 120px; /* Limita la altura máxima para mantener la proporción */
+    }
+}
 
 .carrusel {
     max-width: 50%; /* Ajusta el ancho del carrusel */
