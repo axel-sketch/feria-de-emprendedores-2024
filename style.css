@@ -1,0 +1,311 @@
+* {
+    box-sizing: border-box; /* Asegura que el padding y el border no afecten el ancho de los elementos */
+} 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+body p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+body {
+    
+
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #b6fbff, #83a4d4);
+    font-family: 'Roboto', sans-serif; /* Cambia a una fuente más moderna */
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify; 
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos la altura total de la ventana */
+    margin: 0;
+}
+
+main {
+    flex: 1; /* Hace que el contenido principal ocupe el espacio restante */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #343a40;
+    color: white;
+    margin-top: auto; /* Empuja el footer hacia abajo */
+}
+
+
+header {
+    background: linear-gradient(90deg, rgba(238, 11, 11, 0.7) 34%, rgba(49, 140, 231, 0.87) 65%);
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif; 
+}
+h4{margin: 20px;
+    display:flex;
+    flex-direction: column
+}
+h2, h4 {
+    font-family: 'Lato', sans-serif; /* Fuente moderna para los títulos */
+    margin: 20px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+.boton {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Para que los botones se acomoden en varias filas si son muchos */
+    gap: 10px; /* Espacio entre los botones */
+}
+
+
+
+.barra{
+    width: 100%;
+    height: 3px;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    
+}
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+main {
+    flex: 1; /* Permite que el main ocupe el espacio restante */
+    padding: 1rem; /* Añade algo de espacio alrededor del contenido */
+}
+main p{ text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 10px;
+}
+.lugar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lugar iframe {
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 95%;
+    max-width: 800px;
+    height: 450px;
+    filter: drop-shadow(0px 10px 10px #000);
+}
+.introducion h6{
+    flex: 1;
+    padding: 1rem ;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.introducion img{
+    filter: drop-shadow(0 10px 10px #000);
+}
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border-radius: 10px;
+    
+}
+
+
+.introducion p {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
+    padding: 2%;
+    text-align: justify; /* Texto justificado */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center; /* Esto centrará el texto */
+    
+}
+
+.unca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.unca img {
+    width: 100%; /* Ocupa todo el ancho del contenedor en dispositivos pequeños */
+    height: auto;
+    margin: 10px;
+    object-fit: contain;
+    filter: drop-shadow(0 10px 10px #000);
+}
+
+.unca img {
+    width: 20%;
+    height: auto;
+    margin: 10px;
+    object-fit: contain; /* Asegura que todas las imágenes mantengan su proporción dentro de su contenedor */
+    max-height: 150px; /* Ajusta este valor según lo que necesites */
+}
+
+
+@media (max-width: 768px) {
+    .unca img {
+        width: 80%; /* Reduce el ancho en dispositivos pequeños */
+        max-height: 120px; /* Limita la altura máxima para mantener la proporción */
+    }
+}
+
+.carrusel {
+    max-width: 50%; /* Ajusta el ancho del carrusel */
+    margin: 0 auto; /* Centra el carrusel */
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+}
+
+footer p {
+    font-size: 1rem;
+    color: white;
+}
+.botones a {
+    display: block;
+    margin: 10px auto;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #434343;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.botones a:hover {
+    background-color: #000;
+}
+
+
+#carousel-buttons a {
+    margin-top: 10px;
+    display: inline-block;
+}
+.carrusel img {
+    width: 100%; 
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+}
+
+@media (max-width: 768px) { /* Para pantallas pequeñas, como teléfonos */
+    .carrusel img {
+        height: 200px; /* Ajusta la altura para pantallas pequeñas */
+    }
+}
+
+
+
+
+
+@media (max-width: 768px) 
+  .navbar-collapse {
+        position: fixed; /* Cambiado a fixed para que se deslice */
+        top: 0;
+ }
+    .flayer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Centra horizontalmente las imágenes */
+        align-items: center; /* Alinea verticalmente las imágenes */
+        gap: 10px; /* Espacio entre las imágenes */
+    }
+    
+    .flayer img {
+        max-width: 500px; /* Ajusta el tamaño máximo de las imágenes */
+        height: auto;
+        border-radius: 10px; /* Bordes redondeados opcionales */
+    }
+    .flayer video {
+        max-width: 100%; /* El video ocupará el 100% del ancho disponible */
+        height: auto; /* Mantendrá la proporción del video */
+        border-radius: 10px; /* Opcional: bordes redondeados */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: sombra alrededor del video */
+    }
+    @media (max-width: 768px) {
+        .flayer img {
+            max-width: 100%; /* Se asegura de que las imágenes no excedan el ancho de la pantalla */
+        }
+    }
+    .flayer img {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Más sombra para destacar */
+        border: 2px solid #ccc; /* Borde ligero */
+    }
+        
+    .sponsor {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px; /* Espacio entre las imágenes */
+    }
+    
+    .sponsor img {
+        width: auto; /* Ajusta el ancho de las imágenes */
+        height: 200px; /* Ajusta la altura de las imágenes */
+        filter: drop-shadow(0px 10px 10px #000);
+        border-radius: 10px; /* Bordes redondeados opcionales */
+    }
+    .hora {
+        margin: 25px auto 40px; /* Centra horizontalmente */
+        padding: 20px;
+        background: #83a4d4;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #b6fbff, #83a4d4);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #b6fbff, #83a4d4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra el contenido internamente */
+        border-radius: 10px;
+        filter: drop-shadow(0px 10px 10px #000);
+        text-align: center;
+    }
+    
+    .hora b {
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    
+    .hora p {
+        margin: 5px 0;
+    }
+    
+    @media (max-width: 768px) {
+        .hora {
+            width: 90%; /* Ancho completo en pantallas pequeñas */
+            font-size: 0.9rem;
+        }
+    }
+    
+    
+    
