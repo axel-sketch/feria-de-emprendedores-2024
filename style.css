@@ -156,7 +156,6 @@ img {
     width: calc(100% / 3 - 10px); /* Ajusta a tres imágenes por fila */
     max-width: 150px;
     height: auto;
-    object-fit: contain;
     filter: drop-shadow(0 10px 10px #000);
 }
 
