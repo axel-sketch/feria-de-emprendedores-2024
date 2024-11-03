@@ -1,318 +1,114 @@
-* {
-    box-sizing: border-box; /* Asegura que el padding y el border no afecten el ancho de los elementos */
-} 
-html, body {
-    height: 100%;
-    margin: 0;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-}
-body p {
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-body {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feria de Emprendedores 2024</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     
 
-    display: flex;
-    flex-direction: column;
-    background: linear-gradient(to right, #b6fbff, #83a4d4);
-    font-family: 'Roboto', sans-serif; /* Cambia a una fuente más moderna */
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333;
-    text-align: justify; 
-}
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos la altura total de la ventana */
-    margin: 0;
-}
-
-main {
-    flex: 1; /* Hace que el contenido principal ocupe el espacio restante */
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #343a40;
-    color: white;
-    margin-top: auto; /* Empuja el footer hacia abajo */
-}
-
-
-header {
-    background: linear-gradient(90deg, rgba(238, 11, 11, 0.7) 34%, rgba(49, 140, 231, 0.87) 65%);
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-    font-family: 'Lato', sans-serif; 
-}
-h4{margin: 20px;
-    display:flex;
-    flex-direction: column
-}
-h2, h4 {
-    font-family: 'Lato', sans-serif; /* Fuente moderna para los títulos */
-    margin: 20px;
-    color: #fff;
-    text-align: center;
-    letter-spacing: 1.5px;
-}
-.boton {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* Para que los botones se acomoden en varias filas si son muchos */
-    gap: 10px; /* Espacio entre los botones */
-       margin-bottom: 10px;
-
-}
-
-
-
-.barra{
-    width: 100%;
-    height: 3px;
-    background: #000000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-    
-}
-.logo {
-    width: 50px;
-    height: auto;
-}
-
-main {
-    flex: 1; /* Permite que el main ocupe el espacio restante */
-    padding: 1rem; /* Añade algo de espacio alrededor del contenido */
-}
-main p{ text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-top: 10px;
-}
-.lugar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.lugar iframe {
-    border-radius: 10px;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 95%;
-    max-width: 800px;
-    height: 450px;
-    filter: drop-shadow(0px 10px 10px #000);
-}
-.introducion h6{
-    flex: 1;
-    padding: 1rem ;
-    margin-top: 10px;
-    text-align: center;
-}
-
-.introducion img{
-    filter: drop-shadow(0 10px 10px #000);
-}
-img {
-    display: block;
-    margin: 20px auto;
-    max-width: 100%;
-    border-radius: 10px;
-    
-}
-
-
-.introducion p {
-    font-family: 'Merriweather', serif;
-    font-size: 1.5rem;
-    padding: 2%;
-    text-align: justify; /* Texto justificado */
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: center; /* Esto centrará el texto */
-    
-}
-.unca {
-    display: flex;
-    justify-content: center; /* Centra las imágenes horizontalmente */
-    align-items: center;
-    gap: 20px; /* Espacio entre las imágenes */
-}
-
-.unca img {
-    width: 150px; /* Ajusta el ancho de las imágenes */
-    height: auto;
-    object-fit: contain;
-    filter: drop-shadow(0 10px 10px #000);
-}
-
-/* Hacer que las imágenes se adapten en pantallas pequeñas */
-@media (max-width: 768px) {
-    .unca {
-        flex-wrap: wrap; /* Permite que las imágenes se ajusten en múltiples filas */
-    }
-
-    .unca img {
-        width: 150px; /* Ajusta el tamaño de las imágenes en pantallas pequeñas */
-    }
-}
-
-
-.carrusel {
-    max-width: 50%; /* Ajusta el ancho del carrusel */
-    margin: 0 auto; /* Centra el carrusel */
-}
-
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #222;
-    color: white;
-}
-
-footer p {
-    font-size: 1rem;
-    color: white;
-}
-.botones a {
-    display: block;
-    margin: 10px auto;
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    text-align: center;
-    border-radius: 5px;
-    background-color: #434343;
-    color: #fff;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.botones a:hover {
-    background-color: #000;
-}
-
-
-#carousel-buttons a {
-    margin-top: 10px;
-    display: inline-block;
-}
-.carrusel img {
-    width: 100%; 
-    height: 300px; 
-    object-fit: cover; 
-    border-radius: 10px; 
-}
-
-@media (max-width: 768px) { /* Para pantallas pequeñas, como teléfonos */
-    .carrusel img {
-        height: 200px; /* Ajusta la altura para pantallas pequeñas */
-    }
-}
-
-
-
-
-
-@media (max-width: 768px) 
-  .navbar-collapse {
-        position: fixed; /* Cambiado a fixed para que se deslice */
-        top: 0;
- }
-    .flayer {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center; /* Centra horizontalmente las imágenes */
-        align-items: center; /* Alinea verticalmente las imágenes */
-        gap: 10px; /* Espacio entre las imágenes */
-    }
-    
-    .flayer img {
-        max-width: 500px; /* Ajusta el tamaño máximo de las imágenes */
-        height: auto;
-        border-radius: 10px; /* Bordes redondeados opcionales */
-    }
-    .flayer video {
-        max-width: 100%; /* El video ocupará el 100% del ancho disponible */
-        height: auto; /* Mantendrá la proporción del video */
-        border-radius: 10px; /* Opcional: bordes redondeados */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: sombra alrededor del video */
-    }
-    @media (max-width: 768px) {
-        .flayer img {
-            max-width: 100%; /* Se asegura de que las imágenes no excedan el ancho de la pantalla */
-        }
-    }
-    .flayer img {
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Más sombra para destacar */
-        border: 2px solid #ccc; /* Borde ligero */
-    }
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="./index.html">
+                    <img src="./logos inicio/1000063404-removebg-preview.png" alt="Logo" class="logo">
+                    <span class="ms-2">Feria de Emprendedores 2024</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./educacion tecnica.html">Educación Técnica</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="./emprendimietos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Emprendimientos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./madera y metal.html">Madera y Metal</a></li>
+                                <li><a class="dropdown-item" href="./decoracion.html">Decoracion</a></li>
+                                <li><a class="dropdown-item" href="./electronica.html">Electrónica</a></li>
+                                <li><a class="dropdown-item" href="./accesorios.html">Accesorios</a></li>
+                                <li><a class="dropdown-item" href="./diseño.html">Diseño</a></li>
+                                <li><a class="dropdown-item" href="./jardin.html">Jardín</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./ubicacion.html">Horarios y lugar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./patrocinadores.html">Patrocinadores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./agradecimientos.html">Agradecimientos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./creditos.html">Créditos</a>
+                        </li>
+                    </ul>
+                   
+                </div>
+            </div>
+        </nav>
+        <main class="container my-5">
+            <h1 class="text-center">Bienvenidos a la 4° Feria de Emprendedores 2024</h1>
+            <p class="lead text-center">Escuela Pre Universitaria E.N.E.T N°1 Prof."Vicente García Aguilera"</p>
+            <p class="lead text-center">11 y 12 de Noviembre</p>
+            <div style="display: flex; justify-content: center;">
+                <a href="./ubicacion.html" class="btn btn-outline-dark">Lugar: Salón de Usos Múltiples (SUM)</a>
+            </div>
+        </main>
+    </header>
+    <div class="barra">
+        <p></p>
         
-    .sponsor {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px; /* Espacio entre las imágenes */
-    }
-    
-    .sponsor img {
-        height: 150px; /* Altura fija para todas las imágenes */
-        width: auto; /* Ajusta el ancho manteniendo la proporción */
-        filter: drop-shadow(0px 10px 10px #000);
-        border-radius: 10px; /* Bordes redondeados opcionales */
-        object-fit: contain; /* Asegura que la imagen se adapte dentro del marco */
-    }
-    
-    /* Responsive para pantallas pequeñas */
-    @media (max-width: 768px) {
-        .sponsor img {
-            height: 100px; /* Ajuste de altura en pantallas pequeñas */
-        }
-    }
-    
-    .hora {
-        margin: 25px auto 40px; /* Centra horizontalmente */
-        padding: 20px;
-        background: #83a4d4;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #b6fbff, #83a4d4);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #b6fbff, #83a4d4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    </div>
 
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Centra el contenido internamente */
-        border-radius: 10px;
-        filter: drop-shadow(0px 10px 10px #000);
-        text-align: center;
-    }
-    
-    .hora b {
-        font-weight: bold;
-        margin-top: 10px;
-    }
-    
-    .hora p {
-        margin: 5px 0;
-    }
-    
-    @media (max-width: 768px) {
-        .hora {
-            width: 90%; /* Ancho completo en pantallas pequeñas */
-            font-size: 0.9rem;
-        }
-    }
-    
-    
-    
+    <div class="introducion">
+        <p>Todos los años, Ministerios y escuelas de todo el país celebran la Semana de la Educación Técnica para mostrar los proyectos que docentes y estudiantes, realizan diariamente en aulas, talleres y laboratorios, es por ello que alumnos de 2° y 4° años del Ciclo Superior de nuestra Institución, este 11 y 12 de noviembre se convocan para exhibir sus emprendimientos en la 4° Feria de Emprendedores Edición 2024, demostrando así las aptitudes y conocimientos adquiridos desde el inicio de sus estudios en nuestra institución; y que desde el área de Relaciones Humanas se les brinda el espacio para desplegar todo lo aprendido. 
+        </p>
+        <p>Que disfruten de la Feria tanto como nosotros lo hicimos al prepararla. Sean todos Bienvenidos!</p>
+        <img src="./logos inicio/1728913550726.png" alt="">  
+
+    </div>
+
+
+    <h4>"El éxito es la suma de pequeños esfuerzos repetidos días tras días"</h6>
+        <div class="unca">
+   <img src="./logos inicio/logo-en-rojo.png" alt="ENET">
+   <img src="./logos inicio/1728861368820 (1).png" alt="RADIO INDU">
+   <img src="./logos inicio/1728861281251.png" alt="UNCA">
+</div>
+<h2>
+    Te esperamos!
+</h2>
+   <h2>
+    El ingreso a la Feria es por Avda. Ocampo
+   </h2>
+   <div class="boton">
+   <a href="./educacion tecnica.html" class="btn btn-danger">SEMANA DE LA EDUCACIÓN TÉCNICAD</a>
+   <a href="./emprendimietos.html" class="btn btn-danger">EMPRENDIMIENTOS</a>
+   <a href="./agradecimientos.html" class="btn btn-danger">AGRADECIMIENTO</a>
+   <a href="./patrocinadores.html" class="btn btn-danger">PATROCINADORES</a>
+   <a href="./creditos.html" class="btn btn-danger">CRÉDITOS</a>
+   <a href="./ubicacion.html" class="btn btn-danger">HORARIOS Y LUGAR</a>
+</div>
+        <footer>
+        <p>@2024 Feria de Emprendedores. Todos los derechos reservados.</p>
+    </footer>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+    </script>
+</body>
+</html>
