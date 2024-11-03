@@ -266,11 +266,20 @@ footer p {
     }
     
     .sponsor img {
-        width: auto; /* Ajusta el ancho de las imágenes */
-        height: 200px; /* Ajusta la altura de las imágenes */
+        height: 150px; /* Altura fija para todas las imágenes */
+        width: auto; /* Ajusta el ancho manteniendo la proporción */
         filter: drop-shadow(0px 10px 10px #000);
         border-radius: 10px; /* Bordes redondeados opcionales */
+        object-fit: contain; /* Asegura que la imagen se adapte dentro del marco */
     }
+    
+    /* Responsive para pantallas pequeñas */
+    @media (max-width: 768px) {
+        .sponsor img {
+            height: 100px; /* Ajuste de altura en pantallas pequeñas */
+        }
+    }
+    
     .hora {
         margin: 25px auto 40px; /* Centra horizontalmente */
         padding: 20px;
