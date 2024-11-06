@@ -170,7 +170,7 @@ img {
 
 
 .carrusel {
-    max-width: 80%; /* Ajusta el ancho del carrusel */
+    max-width: 100%; /* Ajusta el ancho del carrusel */
     margin: 0 auto; /* Centra el carrusel */
 }
 
@@ -217,7 +217,7 @@ footer p {
 
 @media (max-width: 768px) { /* Para pantallas pequeñas, como teléfonos */
     .carrusel img {
-        height: 200px; /* Ajusta la altura para pantallas pequeñas */
+        height:250px; /* Ajusta la altura para pantallas pequeñas */
     }
 }
 
@@ -270,12 +270,35 @@ footer p {
         width: auto; /* Ajusta el ancho manteniendo la proporción */
         filter: drop-shadow(0px 10px 10px #000);
         border-radius: 10px; /* Bordes redondeados opcionales */
+        object-fit: cover;
         object-fit: contain; /* Asegura que la imagen se adapte dentro del marco */
     }
     
     /* Responsive para pantallas pequeñas */
     @media (max-width: 768px) {
         .sponsor img {
+            height: 100px; /* Ajuste de altura en pantallas pequeñas */
+        }
+    }
+    .confecat {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px; /* Espacio entre las imágenes */
+    }
+    
+    .confecat img {
+        height: auto; /* Altura fija para todas las imágenes */
+        width: 80%; /* Ajusta el ancho manteniendo la proporción */
+        filter: drop-shadow(0px 10px 10px #000);
+        border-radius: 10px; /* Bordes redondeados opcionales */
+        object-fit: cover;
+        object-fit: contain; /* Asegura que la imagen se adapte dentro del marco */
+    }
+    
+    /* Responsive para pantallas pequeñas */
+    @media (max-width: 768px) {
+        .confecat img {
             height: 100px; /* Ajuste de altura en pantallas pequeñas */
         }
     }
